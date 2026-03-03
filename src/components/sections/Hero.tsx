@@ -27,7 +27,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
         >
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-bg-cream tracking-tight mb-6 drop-shadow-lg">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-bg-cream tracking-tight mb-6 drop-shadow-lg leading-tight">
             AARON GALANG
           </h1>
         </motion.div>
@@ -37,7 +37,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
         >
-          <p className="font-sans text-lg md:text-xl text-surface-gray tracking-wide max-w-2xl font-light">
+          <p className="font-sans text-base sm:text-lg md:text-xl text-surface-gray tracking-wide max-w-2xl font-light leading-relaxed">
             Designing quiet confidence through intentional, timeless architecture.
           </p>
         </motion.div>

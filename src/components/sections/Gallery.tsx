@@ -37,7 +37,7 @@ export function Gallery() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-wrap gap-4 overflow-x-auto pb-4 md:pb-0 hide-scrollbar"
+            className="flex flex-wrap md:flex-nowrap gap-2 md:gap-4 overflow-x-auto pb-4 md:pb-0 scrollbar-hide w-full md:w-auto"
           >
             {categories.map((category) => (
               <button
