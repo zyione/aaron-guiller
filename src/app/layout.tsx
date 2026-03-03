@@ -1,5 +1,20 @@
 import type { Metadata } from "next";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+  weight: ["400", "500", "600"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  weight: ["300", "400", "500"],
+});
 
 export const metadata: Metadata = {
   title: "Architecture Portfolio",
@@ -13,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`antialiased font-sans bg-bg-cream text-text-stone`}>
+      <body className={`${playfair.variable} ${inter.variable} antialiased font-sans bg-bg-cream text-text-stone`}>
         {children}
       </body>
     </html>
